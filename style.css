@@ -1,0 +1,25 @@
+body {
+    outline: 1px solid blue;
+    display: flex;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#sidebar {
+    width: 500px;
+    outline: 1px solid green;
+    padding: 5px 0px;
+}
+
+#navbar {
+    outline: 1px solid purple;
+    display: flex;
+    align-items: center;
+}
+
+#navbar h1 {
+    width: 50%;
+    display: block;
+    padding: 5px;
+    font-size: 1.5rem;
+}
