@@ -5,6 +5,7 @@ import { MdPointOfSale } from "react-icons/md";
 const InfoContainer = styled.div`
     display: flex;
     align-items: center;
+    margin-right: 10px;
 `
 
 const InfoDiv = styled.div`

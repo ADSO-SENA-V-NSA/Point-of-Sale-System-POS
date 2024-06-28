@@ -5,6 +5,8 @@ import { MdSpaceDashboard } from "react-icons/md";
 import { MdPointOfSale } from "react-icons/md";
 import { MdShoppingCart } from "react-icons/md";
 import { MdFileOpen } from "react-icons/md";
+import { MdApps } from "react-icons/md";
+import { MdNotificationAdd } from "react-icons/md";
 import TransactionCard from "./transactionCard";
 
 const NavDiv = styled.div`
@@ -56,6 +58,7 @@ const Navbar = styled.header`
     height: 80px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     box-shadow: 0 2px 0 #1d2027;
 `
 const NavLogo = styled.img`
@@ -75,7 +78,33 @@ const LeftBar = styled.div`
     justify-content: space-around;
 `
 const RightBar = styled.div`
-    
+    display: flex;
+    gap: 20px;
+    margin-right: 30px;
+`
+const ConfigDiv = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #15171C;
+    border-radius: 10px;
+    outline: 1px solid #1d2027;
+    overflow: hidden;
+`
+const ProfilePic = styled.img`
+    width: 50px;
+`
+const Apps = styled(MdApps)`
+    color: #626573;
+    width: 30px;
+    height: 30px;
+`
+const Notifications = styled(MdNotificationAdd)`
+    color: #626573;
+    width: 30px;
+    height: 30px;
 `
 
 export default function Header (){
@@ -100,7 +129,15 @@ export default function Header (){
                    <TransactionCard color={"#006AE6"} text={"Total"} value={"$36.000"}/>    
                 </LeftBar>
                 <RightBar>
-
+                    <ConfigDiv>
+                        <Apps/>
+                    </ConfigDiv>
+                    <ConfigDiv>
+                        <Notifications/>
+                    </ConfigDiv>
+                    <ConfigDiv>
+                        <ProfilePic src="images/profile_pic.jpg" alt="profile" />
+                    </ConfigDiv>
                 </RightBar>
                 
             </Navbar>
