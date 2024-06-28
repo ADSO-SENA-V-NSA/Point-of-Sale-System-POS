@@ -12,6 +12,11 @@ import TransactionCard from "./transactionCard";
 const NavDiv = styled.div`
     display: flex;
     flex-direction: column-reverse;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+    
 `
 const Sidebar = styled.aside`
     background-color: #15171C;
@@ -60,6 +65,8 @@ const Navbar = styled.header`
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 2px 0 #1d2027;
+    background-color: #0F1014;
+    
 `
 const NavLogo = styled.img`
     width: 150px;
@@ -76,6 +83,10 @@ const LeftBar = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+`
+const TransactionDiv = styled.div`
+    display: flex;
+    margin-left: 20px;
 `
 const RightBar = styled.div`
     display: flex;
@@ -124,9 +135,12 @@ export default function Header (){
                     <NavLogoDiv>
                         <NavLogo src="images/panaderia_logo.svg" alt="Panaderia" />
                     </NavLogoDiv>
-                   <TransactionCard color={"#00A261"} text={"Ingresos"} value={"$57.000"}/>
-                   <TransactionCard color={"#E42855"} text={"Egresos"} value={"$21.000"}/>
-                   <TransactionCard color={"#006AE6"} text={"Total"} value={"$36.000"}/>    
+                    <TransactionDiv>
+                        <TransactionCard color={"#00A261"} text={"Ingresos"} value={"$57.000"}/>
+                        <TransactionCard color={"#E42855"} text={"Egresos"} value={"$21.000"}/>
+                        <TransactionCard color={"#006AE6"} text={"Total"} value={"$36.000"}/>   
+                    </TransactionDiv>
+                    
                 </LeftBar>
                 <RightBar>
                     <ConfigDiv>
