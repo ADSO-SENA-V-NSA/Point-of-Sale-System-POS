@@ -86,25 +86,25 @@ const ConfigDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: #15171C;
     border-radius: 10px;
     outline: 1px solid #1d2027;
     overflow: hidden;
 `
 const ProfilePic = styled.img`
-    width: 50px;
+    width: 40px;
 `
 const Apps = styled(MdApps)`
     color: #626573;
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
 `
 const Notifications = styled(MdNotificationAdd)`
     color: #626573;
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
 `
 
 export default function Header (){
