@@ -25,7 +25,7 @@ const Icon =styled(RiBreadFill)`
 `
 const Title = styled.h3`
     margin-top: 0;
-    color: #959FC2;
+    color: #B5B7C3;
 `
 const Description = styled.p`
     margin-top: -20px;

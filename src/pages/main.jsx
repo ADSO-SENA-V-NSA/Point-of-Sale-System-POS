@@ -34,7 +34,37 @@ const OrderDiv = styled.div`
     outline: 1px solid #1d2027;
     border-radius: 15px;
     padding: 20px;
-
+    color: #B5B7C3;
+`
+const PriceDiv = styled.div`
+    background-color: #00A261;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+`
+const PriceContentDiv = styled.div`
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
+    margin-top: -10px;
+`
+const PayDiv = styled.div`
+    width: 100%;
+    height: 50px;
+    background-color: #006AE6;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 30px;
 `
 
 export default function Main(){
@@ -64,6 +94,27 @@ export default function Main(){
             <OrderDiv>
                 <h1>Orden actual</h1>
                 <Order/>
+                <Order/>
+                <Order/>
+                <Order/>
+                <Order/>
+                <PriceDiv>
+                    <PriceContentDiv>
+                        <p>Subtotal</p>
+                        <p>$125.000</p>
+                    </PriceContentDiv>
+                    <PriceContentDiv>
+                        <p>Descuento</p>
+                        <p>$25.000</p>
+                    </PriceContentDiv>
+                    <PriceContentDiv>
+                        <h2>Total</h2>
+                        <h2>$100.000</h2>
+                    </PriceContentDiv>
+                </PriceDiv>
+                <PayDiv>
+                    <h2>Pagar</h2>
+                </PayDiv>
             </OrderDiv>
         </MainDiv>
         
